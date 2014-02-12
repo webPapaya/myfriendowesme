@@ -1,0 +1,24 @@
+<h1>{{ title }}</h1>
+
+<div class="section-container accordion" data-section="accordion">
+    <section ng-repeat="debt in debts">
+        <p class="title" data-section-title>
+            <span class="info">
+                <span class="wrp">
+                    <span class="name">
+                        {{ debt.usage }} - {{debt.timestamp }}
+                    </span>
+                    <span class="money">
+                        {{debt.debt}}
+                    </span>
+                </span>
+            </span>
+            <a class="delete" ng-click="delete(debt.dID)">
+                <span class="wrp">
+                    x
+                </span>
+            </a>
+        </p>
+    </section>
+</div>
+

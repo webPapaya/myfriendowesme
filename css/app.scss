@@ -1,0 +1,65 @@
+
+.accordion {
+  a {
+    display: block;
+
+    &:hover {
+      background: #ccc;
+    }
+  }
+
+  span.info {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.9375em;
+
+
+    .wrp {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+
+  a.info, span.info {
+    width: 90% !important;
+
+    .name {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 49%;
+    }
+
+    .money {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+    }
+  }
+
+  a.delete {
+    width: 9% !important;
+    text-align: right;
+  }
+
+  p:hover {
+    background-color: #efefef !important;
+  }
+}
+
+input.ng-valid {
+  background-color: #E3FFEF !important;
+}
+
+#logo {
+  color: #fff;
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 150%;
+  font-family: 'Courgette', cursive;
+}
+
+#content {
+  position: relative;
+}

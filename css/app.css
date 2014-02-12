@@ -1,0 +1,40 @@
+.accordion a {
+  display: block; }
+  .accordion a:hover {
+    background: #ccc; }
+.accordion span.info {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.9375em; }
+  .accordion span.info .wrp {
+    display: inline-block;
+    width: 100%; }
+.accordion a.info, .accordion span.info {
+  width: 90% !important; }
+  .accordion a.info .name, .accordion span.info .name {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 49%; }
+  .accordion a.info .money, .accordion span.info .money {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    text-align: right; }
+.accordion a.delete {
+  width: 9% !important;
+  text-align: right; }
+.accordion p:hover {
+  background-color: #efefef !important; }
+
+input.ng-valid {
+  background-color: #E3FFEF !important; }
+
+#logo {
+  color: #fff;
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 150%;
+  font-family: 'Courgette', cursive; }
+
+#content {
+  position: relative; }

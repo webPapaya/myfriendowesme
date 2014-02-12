@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+
+<form name="form" ng-submit="add()" novalidate>
+    <label for="name">name*</label>
+    <input id="name" type="text" ng-model="name" required>
+    <label for="debtAmount">debt*</label>
+    <input id="debtAmount" type="text" ng-pattern="/^\d+(,\d?\d?)?$/" ng-model="debtAmount" value="10" required>
+    <label for="usage">usage*</label>
+    <input id="usage" type="text" ng-model="usage" required>
+    <p class="panel radius">
+        Keep in mind that all your data is stored locally. Clearing the Browser Cache could cause a loss of data.
+    </p>
+    <input type="submit" ng-disabled="form.$invalid" class="large button expand" value="Add">
+</form>
